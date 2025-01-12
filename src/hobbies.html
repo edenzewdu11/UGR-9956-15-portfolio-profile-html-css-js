@@ -11,25 +11,36 @@
     <header class="site-header">
         <a href="#" class="logo">eden.</a>
         <nav class="site-navbar">
-            <a href="home.html" class="nav-link active">Home</a>
+            <a href="index.html" class="nav-link active">Home</a>
             <a href="about.html" class="nav-link">About</a>
             <a href="Proficiency.html" class="nav-link">Proficiency</a>
             <a href="hobbies.html" class="nav-link">Hobbies</a>
             <a href="inspirations.html" class="nav-link">Inspirations</a>
             <a href="contact.html" class="nav-link">Contact</a>
         </nav>
-        <button id="menu-toggler" class="icon-btn">
-            <img src="image/icon/menu.png" alt="Menu Toggler Icon" class="icon" height="40" width="40">
-        </button>
-    
-      
-        <button id="darkMode-icon" class="icon-btn">
-            <img src="image/icon/night-mode.png" alt="Dark Mode Icon" class="icon" height="40" width="40">
-        </button>
+        <div class="header-icons">
+            <button id="menu-toggler" class="icon-btn">
+                <img src="image/icon/menu.png" alt="Menu Toggler Icon" class="icon">
+            </button>
+            <button id="dark-mode-toggler" class="icon-btn">
+                <img src="image/icon/night-mode.png" alt="Dark Mode Icon" class="icon">
+            </button>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Proficiency.html">Proficiency</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 <main>
     <section class="hobbies-section" id="hobbies">
-        <h2 class="section-title">My Hobbies</h2>
+        <h2 class="title"><span class="first-word">My</span> <span class="second-word">Hobbies</span></h2>
+
         <div class="hobbies-container">
             <figure class="hobbies-box">
                 <img src="image/travel.avif" alt="Hobby" >
@@ -64,8 +75,7 @@
                 <div class="hobbies-layer">
                     <div>Basket-Ball</div>
                 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam</p>
+                    <p>"Basketball is more than a game; it's passion, teamwork, and endless hustle."</p>
                 </div>
             </figure>
             <figure class="hobbies-box">
@@ -95,7 +105,7 @@
         <p>Copyright &copy; 2024 by EdenZewdu | All Rights Reserved</p>
     </div>
     <div class="footer-iconTop"> 
-        <a href="./home.html">
+        <a href="./index.html">
             <img src="image/icon/up-arrow.png" alt="Arrow to Top" class="arrow-icon" height="20" width="20">
         </a>
         
@@ -105,7 +115,7 @@
 
 
 
-<script src="javascript.js"></script>
+<script src="./javascript.js"></script>
 
 </body>    
 </html>

@@ -1,0 +1,1332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #F9F9FF;
+    --text-color: #1C1A47;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --main-color: #754EF9 ;
+    
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: 'Ggolespi', sans-serif;
+    font-style: italic;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-header {
+    background-color: var(--main-color);
+    padding: 20px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+.site-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.site-navbar {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.site-navbar .nav-link {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+    color: var(--text-color);
+}
+
+
+section {
+    padding: 80px 20px;
+}
+
+
+
+/* Home Section */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px; /* Increased gap between the sections */
+    background-color: #F9F9FF;
+    padding: 80px 70px;
+}
+
+.intro-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.intro-content h3 {
+    font-size: 2rem;
+    color: #4A426A;
+    margin-bottom: 10px;
+}
+
+.intro-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #4A426A;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #4A426A;
+}
+
+.social-media a {
+    font-size: 2rem;
+    color: #4A426A;
+    margin-right: 30px; /* Increased gap between the social media icons */
+    transition: color 0.3s;
+}
+
+.social-media a:last-child {
+    margin-right: 0; /* Remove right margin on the last icon */
+}
+
+.social-media a:hover {
+    color: #754EF9;
+}
+
+.cta-btn {
+    background-color: #754EF9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Added margin between the audio and download button */
+}
+
+.cta-btn:hover {
+    background-color: white;
+    color: #1C1A47;
+}
+
+audio {
+    margin-bottom: 30px; /* Added margin between audio and the download button */
+}
+
+.profile-img img {
+    max-width: 60%;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 300px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    gap: 50px;
+    background-color: #F9F9FF;
+    margin-top: 50px;
+}
+.section-title {
+    font-size: 50px; /* Adjust the size as needed */
+    text-align: center; /* Center the text */
+  }
+.about {
+    color: black; /* Color for 'About' */
+  }
+  
+  .me {
+    color: #754EF9; /* Color for 'Me' */
+  }
+  
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-details {
+    flex: 1;
+}
+
+.about-details h3 {
+    font-size: 2rem;
+    color: #4A426A;
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    font-size: 1.2rem;
+    color:#4A426A ;
+    margin-bottom: 20px;
+}
+
+/* Proficiency Section */
+.title {
+    font-size: 50px; 
+    text-align: center; 
+  }
+  
+  .first-word {
+    color: black; 
+  }
+  
+  .second-word {
+    color: #754EF9; /* Color for 'Proficiency' */
+  }
+  
+
+.proficiency-section {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+.proficiency-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+}
+
+.proficiency-box {
+    flex: 1 1 calc(33.333% - 2rem);
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    border-top: 0.6rem solid var(--main-color);
+    border-bottom: 0.6rem solid var(--main-color);
+    transition: 0.5s ease;
+}
+
+.proficiency-box:hover {
+    box-shadow: 0 1rem 2rem var(--shadow-color);
+    transform: translateY(-0.5rem);
+}
+
+.proficiency-box i {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.proficiency-box h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.proficiency-box p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #4A426A;
+}
+
+.proficiency-box .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.proficiency-box .btn:hover {
+    background-color:white;
+    color: #1C1A47;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
+.hobbies {
+    padding-bottom: 10rem;
+}
+
+.hobbies h2 {
+    margin-bottom: 4rem;
+}
+.title {
+    font-size: 50px; /* Adjust the size as needed */
+    text-align: center; /* Center the text */
+  }
+  
+  .first-word {
+    color: black; /* Color for 'My' */
+  }
+  
+  .second-word {
+    color: #754EF9; /* Color for 'Hobbies' */
+  }
+  
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.hobbies-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    overflow: hidden;
+}
+
+.hobbies-box img {
+    transition: .5s ease;
+}
+
+.hobbies-box:hover img {
+    transform: scale(1.1);
+}
+
+.hobbies-box .hobbies-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.hobbies-box:hover .hobbies-layer {
+    opacity: 1;
+}
+
+.hobbies-layer h4 {
+    font-size: 3rem;
+}
+
+.hobbies-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.hobbies-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.hobbies-layer a i {
+    font-size: 2rem;
+    color: #4A426A;
+}
+
+
+/* Inspirations Section */
+.inspirations-section {
+    background-color: #F9F9FF;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column; /* Keep the title on top */
+    align-items: center; /* Center the content */
+    gap: 40px; /* Add space between the title and the content section */
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.first-word {
+    color: black;
+}
+
+.second-word {
+    color: #754EF9;
+}
+
+.inspirations-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+article:first-of-type {
+    flex: 1;
+    max-width: 50%;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+article:last-of-type {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background-color: #F9F9FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4A426A;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #754EF0;
+}
+
+@media (max-width: 768px) {
+    .inspirations-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article:first-of-type,
+    article:last-of-type {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .inspirations-section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .video-wrapper, .inspirations-table {
+        max-width: 100%;
+    }
+}
+
+.contact h2{
+    margin-bottom: 1rem;
+}
+.heading {
+    font-size: 50px; /* Adjust the size as needed */
+    text-align: center; /* Center the text */
+  }
+  
+  .heading span {
+    color: #754EF9; /* Color for 'Me' */
+  }
+  
+  .heading {
+    color: black; /* Color for 'Contact' */
+  }
+  
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width:100% ;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0.1rem .5rem var(--shadow-color);
+
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+    margin-top:1rem;
+    cursor: pointer;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 5%;
+    background: var(--main-color);
+    margin: auto;
+    font-size: 30px;
+
+}
+.footer-text p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-style: normal;
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: transparent;
+    border-radius: .8rem;
+    border: .2rem solid var(--main-color); 
+    outline: .2rem solid transparent;
+    transition: .5 ease;
+}
+.footer-iconTop a:hover{
+    outline-color: var(--white-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: #333;
+
+}
+
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* Space between the icons, adjust as needed */
+}
+
+
+.btn {
+    background-color: var(--main-color);
+    padding: 20px 20px;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border-radius:2rem ;
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+/* Focus state (optional) */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(117, 78, 249, 0.5); /* Optional: Add a focus ring effect */
+}
+/* General section styling */
+section {
+    padding: 80px 20px;
+    max-width: 1200px; /* Limit the width of sections */
+    margin: 0 auto; /* Center the sections */
+}
+
+/* Specific section styles */
+.home-section,
+.about-section,
+.proficiency-section,
+.hobbies,
+.inspirations-section,
+.contact {
+    margin: 0 auto; /* Center these sections */
+}
+
+/* Example of centering specific elements in the sections */
+.intro-content {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto; /* Center content */
+}
+
+.about-section {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto; /* Center this section */
+    max-width: 1200px; /* Limit the width */
+}
+
+/* Hobbies section example */
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 0 auto; /* Center the grid */
+    max-width: 1200px; /* Limit the width */
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto; /* Center the form */
+}
+/* Style for the container of the header icons */
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between the icons, adjust as needed */
+    
+}
+/* Style for the icon buttons */
+.icon-btn {
+    background-color: transparent;  /* Ensures no background color */
+    border: none; /* Removes the border around buttons */
+    padding: 0; /* Removes any padding */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+/* Style for the icons inside the buttons */
+.icon-btn img {
+    width: 35px;  /* Adjust icon size */
+    height: 35px; /* Adjust icon size */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to slightly enlarge the icons */
+.icon-btn:hover img {
+    transform: scale(1.1); /* Slightly increases the icon size on hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.site-header.dark-mode, .footer.dark-mode, .site-navbar.dark-mode {
+    background-color:var(--main-color);
+}
+/* Header, Navbar, Footer */
+.dark-mode .site-header, 
+.dark-mode .footer, 
+.dark-mode .site-navbar {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.dark-mode .site-header,
+.dark-mode .footer-text p {
+    color:black; /* Set header and footer text to black in dark mode */
+}
+.dark-mode .site-navbar .nav-link {
+    color: black;}
+
+.header-icons button.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    filter: invert(1);
+}
+.proficiency-section.dark-mode {
+    background-color:black;}
+/* Modify the proficiency box for dark mode */
+.dark-mode .proficiency-box {
+    background-color: #333;
+    color: white;
+}
+
+.proficiency-box:hover {
+    box-shadow: 0 1rem 2rem var(--shadow-color);
+    transform: translateY(-0.5rem);
+}
+
+.proficiency-box i {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.proficiency-box h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.proficiency-box p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #4A426A;
+}
+
+
+.proficiency-box .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--main-color);
+    color:black;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.proficiency-box .btn:hover {
+    background-color: white;
+    color: #1C1A47;
+}
+
+/* Adjust button styles in dark mode */
+.dark-mode .proficiency-box .btn {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.dark-mode .proficiency-box .btn:hover {
+    background-color: white;
+    color: #1C1A47;
+}
+
+
+/* Home Section */
+.dark-mode .home-section {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .home-section .intro-content {
+    background-color: black; /* Dark background for intro content */
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.dark-mode .home-section .intro-content h2,
+.dark-mode .home-section .intro-content p {
+    color: white; /* Ensure text is white in dark mode */
+}
+
+.dark-mode .home-section .social-media a img {
+    filter: invert(1); /* Invert colors for social media icons */
+}
+
+.dark-mode .home-section .cta-btn {
+    background-color: var(--main-color);
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.dark-mode .home-section .cta-btn:hover {
+    background-color: white;
+    color: #1C1A47;
+}
+
+/* Profile Image */
+.dark-mode .home-section .profile-img img {
+    filter: brightness(0.7); /* Darken profile image in dark mode */
+    background-color: black;
+}
+/* About Section */
+.dark-mode .about-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.dark-mode .about-section .about-img img {
+    filter: brightness(0.7); /* Darken the image in dark mode */
+    border-radius: 1.5rem;
+}
+
+.dark-mode .about-section .about-details {
+    background-color:black; /* Dark background for about details */
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.dark-mode .about-section .about-details h2,
+.dark-mode .about-section .about-details h3,
+.dark-mode .about-section .about-details h4,
+.dark-mode .about-section .about-details h5 {
+    color: white; /* Ensure all headings are white in dark mode */
+}
+
+.dark-mode .about-section .about-details p {
+    color: #ddd; /* Slightly lighter text color for paragraphs */
+}
+
+.dark-mode .about-section .cta-btn {
+    background-color: var(--main-color);
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.dark-mode .about-section .cta-btn:hover {
+    background-color: white;
+    color: #1C1A47;
+}
+/* Inspirations Section */
+.dark-mode .inspirations-section {
+    background-color: black;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.dark-mode .inspirations-section .section-title {
+    color: white; /* Make section title white in dark mode */
+}
+
+.dark-mode .inspirations-section article {
+    background-color: black; /* Dark background for articles */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.dark-mode .inspirations-section article h3 {
+    color: white; /* Ensure headings are white in dark mode */
+}
+
+.dark-mode .inspirations-section article video {
+    border-radius: 1.5rem;
+    filter: brightness(0.7); /* Darken video in dark mode */
+}
+
+.dark-mode .inspirations-section article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.dark-mode .inspirations-section article table th,
+.dark-mode .inspirations-section article table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.dark-mode .inspirations-section article table th {
+    background-color: #333; /* Darker background for table headers */
+    color: white;
+}
+
+.dark-mode .inspirations-section article table td {
+    background-color: #222; /* Dark background for table data */
+    color: #ddd; /* Lighter text color */
+}
+/* Proficiency Section Dark Mode */
+body.dark-mode .proficiency-section {
+    background-color: black; /* Dark background for the section */
+    color: white; /* White text color for visibility */
+}
+
+body.dark-mode .proficiency-container {
+    background-color: black; /* Darker background for the container */
+}
+
+body.dark-mode .proficiency-box {
+    background-color: #555; /* Dark background for each proficiency box */
+    color: white; /* White text for the proficiency boxes */
+    border-top: 0.6rem solid var(--main-color); /* Maintain the border color */
+    border-bottom: 0.6rem solid var(--main-color); /* Maintain the border color */
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+}
+
+body.dark-mode .proficiency-box h3 {
+    color: var(--main-color); /* Brand color for headings */
+}
+
+body.dark-mode .proficiency-box ul li {
+    color: white; /* Light gray color for list items */
+}s
+
+body.dark-mode .proficiency-box .btn {
+    background-color: var(--main-color); /* Brand color for button */
+    color: white; /* White text for the button */
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+/* Dark mode button hover effect */
+body.dark-mode .proficiency-box .btn:hover {
+    background-color: white; /* Button hover effect */
+    color: #1C1A47; /* Dark text color on hover */
+}
+
+/* Dark mode title styling */
+body.dark-mode .title {
+    font-size: 50px; 
+    text-align: center; 
+}
+
+/* First word styling in dark mode */
+body.dark-mode .title .first-word {
+    color: white; 
+}
+
+
+/* Tablet Portrait (600px to 768px) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .site-header {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none; /* Hide navigation links on tablet */
+    }
+
+    .home-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .intro-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro-content p {
+        font-size: 1.1rem;
+    }
+
+    .profile-img img {
+       
+        display: none;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-img img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+/*  */
+    .proficiency-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next row */
+        gap: 20px; /* Spacing between boxes */
+        justify-content: space-between; /* Adjust alignment */
+    }
+    
+    .proficiency-box {
+        flex: 1 1 calc(50% - 20px); /* Two boxes will take 50% of the width with gap */
+        
+    }
+    
+    .proficiency-box:nth-child(3) {
+        flex: 1 1 80%; /* Make the third box take full width */
+        order: 3; /* Ensure it's displayed below the first two */
+    }
+    
+    .hobbies-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .hobbies-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hobbies-box img {
+        width: 100%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-iconTop {
+        margin-top: 10px;
+    }
+
+    /* Show header icons on tablet */
+    .header-icons {
+        display: block;
+    }
+}
+
+/* Mobile (max-width: 599px) */
+@media screen and (max-width: 599px) {
+    /* General Layout Adjustments */
+    .site-header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-navbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        display: none; /* Hide navigation links on mobile */
+    }
+
+    .home-section {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .intro-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+    }
+
+    .profile-img img {
+        display: none;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .proficiency-container {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 90%; /* Make proficiency container smaller */
+        margin: 0 auto; /* Center the proficiency container */
+    }
+
+    .proficiency-box {
+        flex: 1 1 100%;
+    }
+
+    .hobbies-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hobbies-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hobbies-box img {
+        width: 100%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        font-size:20px ;
+    }
+
+    .footer-iconTop {
+        margin-top: 15px;
+    }
+    .footer {
+        font-size: 14px; /* Smaller font size for footer text */
+        text-align: center; /* Center align footer content */
+        padding: 20px; /* Add padding around footer */
+    }
+
+    .footer .footer-iconTop {
+        margin-top: 10px; /* Adjust margin for icon top if there are any icons */
+    }
+
+    .footer a {
+        font-size: 12px; /* Smaller font size for links */
+    }
+}
+
+    /* Show header icons on mobile */
+    .header-icons {
+        display: block;
+    }
+
+    /* Inspirations Section (Video and Table Layout) */
+    .inspirations-section {
+        padding: 20px 10px;
+        text-align: center; /* Center the section content */
+    }
+
+    .inspirations-content {
+        flex-direction: column; /* Stack video and table vertically */
+        gap: 20px; /* Add spacing between video and table */
+    }
+
+    /* Video Styles for Mobile */
+    .video-wrapper {
+        width: 100%; /* Take full width for larger container */
+        max-width: 800px; /* Limit the maximum width of the video */
+        margin: 0 auto; /* Center the video */
+    }
+
+    .video-card {
+        width: 100%; /* Ensure video takes up the full width */
+        margin-bottom: 10px;
+    }
+
+    /* Table Styles for Mobile */
+    .inspirations-table {
+        width: 100%; /* Take full width for larger container */
+        max-width: 1000px; /* Limit the maximum width of the table */
+        margin: 0 auto; /* Center the table */
+        padding: 20px;
+       
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        padding: 15px; /* Increased padding for more space */
+        text-align: left;
+        font-size: 16px; /* Increased font size for better readability */
+    }
+
+    table th {
+        background-color: #4A426A;
+        color: white;
+    }
+
+    table tr:hover {
+        background-color: #754EF0;
+    }
+
+/* Logo */
+.logo {
+    font-size: 20px; /* Smaller logo size on mobile */
+    justify-content: flex-start;
+}
+
+/* Footer text */
+.footer-text p {
+    font-size: 20px; /* Smaller footer text */
+    margin: 8px 0; /* Reduced margin */
+}
+
+/* Footer icon */
+.footer-iconTop .arrow-icon {
+    width: 16px; /* Smaller arrow icon size */
+    height: 16px;
+}
+
+.footer {
+    padding: 2px 7px; /* Reduced padding for mobile */
+}
+
+
+/* Desktop (above 768px) */
+@media screen and (min-width: 768px) {
+    .header-icons #menu-toggler {
+        display: none; /* Hide only the menu icon on desktop */
+    }
+    
+
+    .site-navbar {
+        display: flex; /* Show navigation links on desktop */
+    }
+}
+/* Default navbar styling for larger screens */
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navbar a {
+    margin: 0 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hide menu icon on desktop */
+.header-icons {
+    display: block;
+}
+
+.header-icons .icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding-top: 50px;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu ul li {
+    margin: 20px 0;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add hover effect to links */
+.nav-menu ul li a:hover {
+    color:#754EF9;  /* Gold color on hover */
+    transform: scale(1.1);  /* Slightly enlarge the link */
+}
+
+/* When the menu is toggled (active), display the nav */
+.nav-menu.active {
+    display: block;
+    transform: translateX(0);  /* Make the menu slide in */
+}
+
+
+@media (max-width: 768px) {
+    .site-navbar {
+        display: none;  
+    }
+
+    .header-icons {
+        display: block; 
+    }
+}
+
+
+@media (min-width: 769px) {
+    .site-navbar {
+        display: flex;  
+    }
+    .inspirations-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article:first-of-type,
+    article:last-of-type {
+        max-width: 100%;
+    }
+
+    
+}
